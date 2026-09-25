@@ -80,21 +80,6 @@ def graphics():
             add = ''
         print(add + str(x),end=' ')
 
-def Frame_vanila():
-    pixel = ' '
-    offset = 6
-    print(WHITE + offset*pixel + GREEN + 9*pixel + WHITE + offset*pixel + RESET)
-    for i in range(1, 3):
-        print(WHITE + (offset - i)*pixel + GREEN + 2*pixel + WHITE + (5 + 2*i)*pixel + GREEN + 2*pixel + WHITE + (offset-i)*pixel + RESET)
-    for _ in range(3):
-        print(WHITE + (offset-2)*pixel + GREEN + 2*pixel + WHITE + 9*pixel + GREEN + 2*pixel + WHITE + (offset-i)*pixel + RESET)
-    for i in range(2, 0, -1):
-        print(WHITE + (offset - i)*pixel + GREEN + 2*pixel + WHITE + (5 + 2*i)*pixel + GREEN + 2*pixel + WHITE + (offset-i)*pixel + RESET)
-    print(WHITE + offset*pixel + GREEN + 9*pixel + WHITE + offset*pixel + RESET)
-    for _ in range(2):
-        print(WHITE + (offset + 4)*pixel + GREEN + pixel + WHITE + (offset+4)*pixel + RESET)
-    print(WHITE + (offset)*pixel + GREEN + pixel*9 + WHITE + (offset)*pixel + RESET)
-
 def Frame_1():
     pixel = ' '
     offset = 6
@@ -194,11 +179,6 @@ def animation():
 # n = int(input('color number: '))
 # Picture(n) # можно указать цвет
 
-animation()
-
-# Frame_1()
-# Frame_2()
-# Frame_3()
-# Frame_4()
+# animation()
 
 # graphics()
